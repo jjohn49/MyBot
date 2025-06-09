@@ -12,7 +12,7 @@ def generateCommitTimes(lowRange, highRange) -> None:
         commitTime = time(hour=hour, minute=minute)
         commitTimes.add(commitTime)
 
-with open("/Projects/Data.txt", 'r') as file:
+with open("/Projects/MyBot/Data.txt", 'r') as file:
 
     while True :
         if currentDate == datetime.now() and currentDate.time() in commitTimes:
